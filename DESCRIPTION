@@ -1,0 +1,12 @@
+Package: effrcor
+Type: Package
+Title: Generate random correlation matrices
+Version: 1.0
+Date: 2019-09-04
+Author: Simon Boge Brant
+Maintainer: simonbb@math.uio.no
+Description: This package contains one function to generate random correlation matrices based on partial correlations, based on the paper with the same name by Harry Joe (Journal of multivariate analysis, 2006), and on the existing implementation in the R package clusterGeneration. The existing implementation is here sped up by porting the code to c++, and replacing a costly matrix inversion step (in order to solve a linear system) that is performed many times by a conjugate gradient solver. The c++ conjugate gradient implementation is borrowed from the R package cPCG.
+
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.1)
+LinkingTo: Rcpp, RcppArmadillo
