@@ -1,4 +1,4 @@
-rcorrmatrix <- function(d,alphad=1, tol=10**(-3), maxiter_cg = 10) {
+rcorrmatrix <- function(d, alphad=1, tol=10**(-10), maxiter_cg=10**4) {
   
   d<-as.integer(d)
   if(d<=0 || !is.integer(d)) {
